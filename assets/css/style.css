@@ -8,6 +8,8 @@
 
 .to-do-content {
 	border: 1px solid rgb(114, 206, 159);
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 ul {
@@ -15,12 +17,13 @@ ul {
 }
 
 li {
-	padding: 30px 30px;
 	font-size: 20px;
 	color: #202020;
-	width: 400px;
+	width: 600px;
 	cursor: pointer;
+	display: flex;
 }
+
 
 li:nth-child(even) {
 	background-color: #E0E0E0;
@@ -30,13 +33,16 @@ li:nth-child(odd) {
 	background-color: #FFF;
 }
 
+span {
+	padding: 30px 30px;
+}
 #add-new {
 	background-color: #195e83;;
 	color: #FFF;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	font-weight: 900;
 	display: flex;
 	justify-content: space-between;
@@ -63,4 +69,37 @@ input[type=text] {
   	border: none;
   	border-radius: 4px;
   	font-size: 20px;
+  	margin-left: 40px;
+  	width: 400px;
+}
+
+/*Class will be added in jQuery to mark as done:*/
+.done-task { 
+	text-decoration: line-through;
+}
+
+.remove-class {
+	background: #e74c3c;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    display: flex;
+    flex-wrap: wrap;
+ 	align-content: center;
+ 	justify-content: center;
+}
+
+i.fas {
+	display: none;
+}
+
+/*Class will be added in jQuery and rubish bin appears:*/
+
+.active {
+	width: 60px;
+}
+.active .fa-trash-alt {
+	display: block;
 }
