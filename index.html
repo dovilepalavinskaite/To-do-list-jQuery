@@ -15,7 +15,8 @@
 				<ul class="tasks-list">
 					<li id="add-new">
 						<label for="">
-							<input type="text" id="new-task" placeholder="Write new task">
+							<input type="text" id="new-task" placeholder="Write new task" onfocus="this.placeholder = ''"
+							onblur="this.placeholder = 'Write new task'">
 							<input type="submit" value="+" id="click">
 						</label>
 					</li>

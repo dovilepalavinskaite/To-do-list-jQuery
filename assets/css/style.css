@@ -103,3 +103,77 @@ i.fas {
 .active .fa-trash-alt {
 	display: block;
 }
+
+/*Responsive design:*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+li {
+	font-size: 25px;
+	width: 300px;
+}
+
+span {
+	padding: 10px 10px;
+	font-size: 20px;
+}
+
+#add-new {
+	letter-spacing: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+input[type=text] {
+	padding: 5px 10px;
+  	margin: 5px 0;
+  	font-size: 20px;
+  	margin-left: 10px;
+  	width: 200px;
+}
+
+input[type=submit]{
+  	width: 30px;
+  	height: 30px;
+  	font-size: 25px;
+}
+
+}
+
+
+@media (min-width: 220px) and (max-width: 480px) {
+  
+li {
+	font-size: 15px;
+	width: 250px;
+}
+
+span {
+	padding: 5px 5px;
+	font-size: 10px;
+}
+
+#add-new {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+input[type=text] {
+	padding: 5px 10px;
+  	margin: 5px 0;
+  	font-size: 15px;
+  	margin-left: 10px;
+  	width: 150px;
+}
+
+input[type=submit]{
+  	width: 30px;
+  	height: 20px;
+  	font-size: 15px;
+}
+
+.active {
+	width: 30px;
+}
+  
+}
