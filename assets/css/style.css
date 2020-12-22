@@ -1,0 +1,66 @@
+.to-do-wrapper {
+	display: flex;
+  	align-items: center;
+ 	justify-content: center;
+ 	height: 100vh;
+ 	background-color: rgb(114, 206, 159);
+}
+
+.to-do-content {
+	border: 1px solid rgb(114, 206, 159);
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	padding: 30px 30px;
+	font-size: 20px;
+	color: #202020;
+	width: 400px;
+	cursor: pointer;
+}
+
+li:nth-child(even) {
+	background-color: #E0E0E0;
+}
+
+li:nth-child(odd) {
+	background-color: #FFF;
+}
+
+#add-new {
+	background-color: #195e83;;
+	color: #FFF;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: 900;
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type=submit]{
+	background-color: #4CAF50;
+  	color: white;
+  	width: 50px;
+  	height: 43px;
+  	font-size: 40px;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=text] {
+	padding: 14px 20px;
+  	margin: 8px 0;
+  	border: none;
+  	border-radius: 4px;
+  	font-size: 20px;
+}
